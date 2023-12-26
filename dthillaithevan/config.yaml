@@ -1,0 +1,386 @@
+baseURL: "https://dthillaithevan.github.io/"
+languageCode: "en-us"
+title: "Dilaksan's website"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+#   main:
+#     - class: center
+#     - identifier: biography
+#       name: Biography
+#       title: Biography
+#       # url: /blogs
+#       weight: 1
+#     - identifier: gallery
+#       name: Gallery
+#       title: Blog posts
+#       url: /gallery
+#       weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Dilaksan's website"
+  description: Text
+
+  useBootstrapCDN: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+   # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Dilaksan Thillaithevan" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disablePublications: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hello! I am"
+    title: "Dilaksan"
+    subtitle: "I'm a postdoctoral researcher working in the Structural Metamaterials Optimization group at Imperial College London."
+    content: "My research focus is Multiscale Structural Optimization. I enjoy programming, playing squash, running and travelling."
+    image: /images/img.jpg
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume (Coming Soon!)"
+      url: "#"
+      download: true #TODO: Add link to CV
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/dthillaithevan
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/dilaksan-thillaithevan/
+        - icon: ai ai-google-scholar
+          url: https://scholar.google.com/citations?user=dGX4BNMAAAAJ&hl=en/
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/PXL_20221008_172558064-2.jpg"
+    content: |-
+      I am a Research Associate in the Department of Aeronatuics at Imperial College London working on the [OncoEng project](https://oncoeng.org).
+
+      Although London has been my home for the last 6 years, I was born in Denmark and am fluent in English, Danish and Tamil. I enjoy running, hiking, playing squash and travelling. 
+
+    skills:
+      enable: true
+      title: "Interests:"
+      items:
+        - "Multiscale Structural Optimization"
+        - "Computational Mechanics"
+        - "Programming"
+        - "Travelling"
+        - "Hiking"
+        - "Running"
+        - "Karting"
+        - "Squash"
+
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Research Associate"
+        company: "Imperial college London"
+        companyUrl: "https://example.com"
+        date: "Nov 2022 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://oncoeng.org"
+        info:
+          enable: true
+          content: Currently working as a Research Associate
+        content: "I am currently working as a Research Associate at Imperial College London on the [OncoEng project](https://oncoeng.org). My research is focussed on the development of a structural optimization framework to design minimally invasive implants for the treatment of bone metasases. To this end, I am in the process of developing an inverse homogenization tool to design optimal microstructures."
+
+      - job: "Teaching assistant"
+        company: "Imperial College Business School"
+        companyUrl: "https://example.com"
+        date: "Nov 2019 - present"
+        featuredLink:
+          enable: false
+        info:
+          enable: false
+          contant: ""
+        content: |
+          Alongside my PhD and Research Associate roles I have been working as a teaching assistant for the Imperial College Business school, utilising my numerical and programming skills to help students better understand their course material. As part of the role I have taken in-person and online tutorials, provided additional one to one support for students and marking assessments. During my time as a teaching assistant I have consistently gone above and beyond to assist students in their learning which is evident through the postive feedback I have received from the students and teaching staff.
+
+          Modules:
+          - Global Online MBA
+          - Business Analytics: Optimization and Decision models
+          - Imperial College Business School Summer School: Business Analytics
+
+      - job: "Technology Business Analyst"
+        company: "Fidelity International"
+        companyUrl: "https://www.fidelityinternational.com"
+        date: "Sept 2017 - Sept 2018"
+        featuredLink:
+          enable: false
+          url: "https://example.com"
+        info:
+          enable: true
+          content: I worked as technology business analyst at Fidelity International for one year.
+        content: |
+          I worked at Fidelity International for one year as a Technology Business Analyst. I was in charge of the roll out of a new analyst research platform, managing the development team in India and liasing with external vendors to ensure a seamless transition to the new platform. 
+
+          - Lead analyst research platform roll-out
+          - Lead implementation and application of efficient in-house fund "waterfall" aggregation algorithm using SQL, working alongside fixed income quant team
+          - Lead development of reliable analyst performance application in Python
+          - Self-taught SQL programming
+          - Passed CFA Level 1
+
+  
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Doctor of Philosophy - Multiscale Structural Optimization"
+        school:
+          name: "Imperial College London"
+          #url: "https://www.imperial.ac.uk/aeronautics/"
+        date: "2018 - 2023"
+        content: |-
+          In Janurary 2023 I completed my PhD on multiscale structural optimization in the [Structural Metamaterials group](https://www.imperial.ac.uk/structural-metamaterials/) in the Department of Aeronautics at Imperial College London. My research was focussed on developing methods to improve the real world robustness of optimized multiscale structures. 
+
+          Key achievements:
+            - Published two journal articles in a Q1 journal
+            - Presented two abstracts at two international aerospace conferences
+            - Winner of Imperial College Aeronautics research showcase 2022
+          
+          Extracurricular acitivies:
+            - Represented Imperial College in British Universities Karting Championship
+            - Part of Imperial College London Algorithmic Trading Society
+            - Winner of 2019 BlackRock Algothon representing Imperial College London Algorithmic Trading Society
+
+      - title: "Master of Engineering - Aeronautical and Astronautical Engineering"
+        school:
+          name: "University of Southampton"
+          #url: "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering?"
+        GRADE: 1st Class Hons.
+        date: "2013 - 2017"
+        content: |-
+          I completed my Masters in Aeronautical and Astronautical Engineering at the University of Southampton in 2017. I specialised in Aerodynamics and was part of a group design project designing an adverse weather research aircraft during my final year. The research drone was successfully flown on over 100 occasions and shortlisted for a [design award](http://uosdesign.org/designshow2017/group-design-project/awra-tornado-chasing-uav).
+
+          Key achievements:
+            - Winner of Royal Aeronautical Society University Prize for best overall performance in the 2017 MEng cohort
+            - Averaged 78% across all modules over the four year degree
+            - UAV design in 4th year group design project shortlisted for design award
+
+          Extracurricular acitivies:
+            - Represented University of Southampton in British Universities Karting Championship
+            - Competed nationally with University of Southampton dodgeball team
+            
+      - title: "A-levels"
+        school:
+          name: "Canons High School Sixth Form"
+        date: "2011 - 2013"
+        content: |-
+          - Maths: A*
+          - Physics: A*
+          - Chemistry: A
+          - Tamil: A*
+
+  # Education
+  publications:
+    enable: true
+    title: "Publications"
+    index: false
+    items:
+      - title: "Robust multiscale optimization accounting for spatially-varying material uncertainties"
+        url: "https://link.springer.com/article/10.1007/s00158-021-03104-w"
+        image1: /images/Cant.png
+        journal:
+          name: "Structural and Multidisciplinary Optimization"
+        date: "Jan 2022"
+        authors: "D. Thillaithevan, P. Bruce, M. Santer"
+        doi: "10.1007/s00158-021-03104-w"
+        content: |-
+          In this work we demonstrate a methodology for performing robust optimization using multivariable parameterized lattice microstructures.
+
+      - title: "Modelling material uncertainties using random irregularities in lattice based multiscale optimization"
+        url: "https://arc.aiaa.org/doi/abs/10.2514/6.2022-0634"
+        image1: /images/benchmark_rear.png
+        journal:
+          name: "AIAA SCITECH 2022 Forum"
+        date: "Dec 2021"
+        authors: "D. Thillaithevan, P. Bruce, M. Santer"
+        doi: "10.2514/6.2022-0634"
+        content: |-
+          In this work we demonstrate a methodology for performing robust optimization using multivariable parameterized lattice microstructures.
+
+      - title: "Modelling material uncertainty in multiscale optimization using lattice microstructures"
+        url: "https://arc.aiaa.org/doi/abs/10.2514/6.2021-1593"
+        image1: /images/uniform_3std_brige_iso.jpg
+        journal:
+          name: "AIAA SCITECH 2022 Forum"
+        date: "Jan 2021"
+        authors: "D. Thillaithevan, P. Bruce, M. Santer"
+        doi: "10.2514/6.2021-1593"
+        content: |-
+          In this work we present a method for including material uncertainty, arising from manufacturing defects during the additive manufacturing process, within a functionally graded lattice optimization framework.
+
+
+      - title: "Stress-constrained optimization using graded lattice microstructures"
+        url: "https://link.springer.com/article/10.1007/s00158-020-02723-z"
+        image1: /images/stress_structure.png
+        journal:
+          name: "Structural and Multidisciplinary Optimization"
+        date: "Oct 2020"
+        authors: "D. Thillaithevan, P. Bruce, M. Santer"
+        doi: "10.1007/s00158-020-02723-z"
+        content: |-
+          In this work, we propose a novel method for predicting stress within a multiscale lattice optimization framework. 
+  
+   # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Winner - Imperial College Aeronautics Research Showcase (Jul 2022)
+        content: |-
+          I presented my PhD reseach during the Imperial College Aeronautics Research Showcase. My [poster](/images/DT_poster.jpg), titled "Multistructural Optimization Under Manufacturing Uncertainty" was [awarded first prize](https://www.imperial.ac.uk/news/238491/aeronautics-hosts-showcase-event-highlight-research/)
+        url: https://www.imperial.ac.uk/news/238491/aeronautics-hosts-showcase-event-highlight-research/
+      - title: Winner - BlackRock Algothon (Oct 2019)
+        content: In October 2019 I took part in the BlackRock 24 hour Algothon in London. As a team of 2, my colleauge and I derived a algorithm for propagating climate risk for businesses. We implemented the algorithm in Python and successfully demonstrated the efficacy of the algorithm using real world data using a Quandl API. Our work was awarded (https://www.imperial.ac.uk/business-school/news/algothon-2019-blackrock-ccfi-imperial-prize/)
+        url: https://www.imperial.ac.uk/business-school/news/algothon-2019-blackrock-ccfi-imperial-prize/
+      - title: Best Climate Finance & Investment Hack - BlackRock Algothon (Oct 2019)
+        content: Took part in 2019 BlackRock Algothon... [Link](https://www.imperial.ac.uk/business-school/news/algothon-2019-blackrock-ccfi-imperial-prize/)
+        url: https://www.imperial.ac.uk/business-school/news/algothon-2019-blackrock-ccfi-imperial-prize/
+      - title: Royal Aeronautical Society University Prize (Jul 2017)
+        content: Best overall performance
+        url: https://www.southampton.ac.uk/engineering/news/2017/08/15-graduation-2017.page
+      - title: Excellence award nominee (Sept 2015)
+        content: Lloyd’s Register & University of Southampton
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Personal Finance Tools
+        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+        image: /images/pft.png
+        featured:
+          name: Link
+          link: https://personalfinancetools.co.uk
+        badges:
+          - "Personal Finance"
+          - "Python"
+          - "Django"
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: dt718@ic.ac.uk
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/dthillaithevan
+      linkedin: https://www.linkedin.com/in/dilaksan-thillaithevan/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+        

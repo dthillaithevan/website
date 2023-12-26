@@ -1,0 +1,4 @@
+baseURL = 'https://dthillaithevan.github.io/'
+languageCode = 'en-us'
+title = 'Dilaksans website'
+theme='hugo-profile'

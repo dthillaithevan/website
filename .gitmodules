@@ -1,0 +1,8 @@
+[submodule "dthillaithevan/dthillaithevan.github.io"]
+	path = dthillaithevan/dthillaithevan.github.io
+	url = https://github.com/dthillaithevan/dthillaithevan.github.io.git
+	branch = main
+[submodule "dthillaithevan/public"]
+	path = dthillaithevan/public
+	url = https://github.com/dthillaithevan/dthillaithevan.github.io.git
+	branch = main
